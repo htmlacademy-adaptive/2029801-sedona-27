@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Александр Горшенин](https://up.htmlacademy.ru/adaptive/27/user/2029801).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов] (https://htmlacademy.ru/profile/sench).
 
 ---
 
