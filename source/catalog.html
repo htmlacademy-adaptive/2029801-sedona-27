@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Фото и видео</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -11,6 +12,7 @@
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
+          <img src="img/menu-toggle-open.svg" width="23" height="22" alt="">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-navigation__wrapper">
@@ -33,12 +35,12 @@
     </header>
     <main class="main-container">
       <section class="preview">
-        <div class="preview__hero">
-          <img class="preview__hero__text" src="img/hero-text-secondary.svg" width="229" height="39" alt="Sedona">
+        <div class="preview__hero preview__hero--cut-background">
+          <img class="preview__text" src="img/hero/hero-text-secondary.svg" width="229" height="39" alt="Sedona">
         </div>
-        <div class="preview__introduction">
-          <h1 class="preview__introduction__text">Фото и видео</h1>
-          <p class="preview___description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="preview__introduction-wrapper">
+          <h1 class="preview__introduction">Фото и видео</h1>
+          <p class="preview__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </section>
       <section class="photo-gallery">
@@ -96,7 +98,7 @@
         <h2 class="visually-hidden">Видео-галлерея</h2>
         <div class="video-gallery__wrapper">
           <b class="video-gallery__title">Все еще сомневаетесь?</b>
-          <p class="video-gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="video-gallery__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не подорожали в очередной раз!</p>
           <img class="video-gallery__preview-image" src="img/gallery/video-preview.jpg" width="280" height="177" alt="Машины едут по шоссе в Седоне">
           <button class="video-gallery__play-button">Воспроизвести видео</button>
         </div>
@@ -110,20 +112,23 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontankte" href="https://vk.com/htmlacademy">Мы в ВКонтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+              <span class="visually-hidden">Мы в ВКонтакте</span>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Telegram</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+              <span  class="visually-hidden">Мы в Telegram</span>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы на YouTube</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+              <span  class="visually-hidden">Мы на YouTube</span>
             </li>
           </ul>
         </div>
         <div class="copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
-            <img class="copyright__link__image" src="img/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
+            <img class="copyright__image" src="img/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
       </div>
