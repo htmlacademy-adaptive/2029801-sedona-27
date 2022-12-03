@@ -36,7 +36,7 @@
     <main class="main-container">
       <section class="preview">
         <div class="preview__hero">
-          <img class="preview__hero__text" src="img/hero/hero-text-secondary.svg" width="229" height="39" alt="Sedona">
+          <img class="preview__text" src="img/hero/hero-text-secondary.svg" width="229" height="39" alt="Sedona">
         </div>
         <div class="preview__introduction-wrapper">
           <h1 class="preview__introduction">Оставьте свой отзыв</h1>
@@ -46,101 +46,101 @@
       <section class="review">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="review__form" method="post" action="https://echo.htmlacademy.ru/">
-          <fieldset class="review__form__fieldset naming">
-            <legend class="naming__title">Представьтесь:</legend>
+          <fieldset class="review__fieldset naming">
+            <legend class="naming__legend">Представьтесь:</legend>
             <ul class="naming__list">
               <li class="naming__item">
-                <label class="naming__item__title">Имя*:
-                  <input class="naming__item__field" type="text" placeholder="Введите ваше имя" name="name" value="Пётр" required>
+                <label class="naming__title">Имя*:
+                  <input class="naming__field" type="text" placeholder="Введите ваше имя" name="name" value="Пётр" required>
                 </label>
               </li>
               <li class="naming__item">
-                <label class="naming__item__title">Фамилия*:
-                  <input class="naming__item__field" type="text" placeholder="Введите вашу фамилию" name="surname" value="Пустота" required>
+                <label class="naming__title">Фамилия*:
+                  <input class="naming__field" type="text" placeholder="Введите вашу фамилию" name="surname" value="Пустота" required>
                 </label>
               </li>
               <li class="naming__item">
-                <label class="naming__item__title">Отчество*:
-                  <input class="naming__item__field" type="text" placeholder="Введите ваше отчество" name="middle-name" value="Викторович" required>
+                <label class="naming__title">Отчество*:
+                  <input class="naming__field" type="text" placeholder="Введите ваше отчество" name="middle-name" value="Викторович" required>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form__fieldset contact-info">
-            <legend class="contact-info__title">Контактная информация:</legend>
+          <fieldset class="review__fieldset contact-info">
+            <legend class="contact-info__legend">Контактная информация:</legend>
             <ul class="contact-info__list">
               <li class="contact-info__item">
-                <label class="contact-info__item__title">Контактный телефон*:
-                  <input class="contact-info__item__field" type="tel" placeholder="Введите телефон" required>
+                <label class="contact-info__title">Контактный телефон*:
+                  <input class="contact-info__field" type="tel" placeholder="Введите телефон" required>
                 </label>
-                <div class="contact-info__item__icon phone-icon"></div>
+                <div class="contact-info__icon phone-icon"></div>
               </li>
               <li class="contact-info__item">
-                <label class="contact-info__item__title">Электронная почта*::
-                  <input class="contact-info__item__field" type="email" placeholder="Введите e-mail" required>
+                <label class="contact-info__title">Электронная почта*::
+                  <input class="contact-info__field" type="email" placeholder="Введите e-mail" required>
                 </label>
-                <div class="contact-info__item__icon email-icon"></div>
+                <div class="contact-info__icon email-icon"></div>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form__fieldset impression">
+          <fieldset class="review__fieldset impression">
             <legend class="impression__title">Ваше общее впечатление:</legend>
             <ul class="impression__list">
               <li class="impression__item">
-                <label class="impression__item__field control ">
+                <label class="impression__field control ">
                   <input class="control__input" type="radio" name="impression" value="positive" checked>
                   <span class="control__label">Скорее положительное</span>
                 </label>
               </li>
               <li class="impression__item">
-                <label class="impression__item__field control ">
+                <label class="impression__field control ">
                   <input class="control__input" type="radio" name="impression" value="negative">
                   <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="impression__item">
-                <label class="impression__item__field control ">
+                <label class="impression__field control ">
                   <input class="control__input" type="radio" name="impression" value="neutral">
                   <span class="control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form__fieldset visited-place">
+          <fieldset class="review__fieldset visited-place">
             <legend class="visited-place__title">Посещенные достопримечательности:</legend>
             <ul class="visited-place__list">
               <li class="visited-place__item">
-                <label class="visited-place__item__field control ">
+                <label class="visited-place__field control ">
                   <input class="control__input" type="checkbox" name="devil-bridge" checked>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="visited-place__item">
-                <label class="visited-place__item__field control ">
+                <label class="visited-place__field control ">
                   <input class="control__input" type="checkbox" name="bell-mountain" checked>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="visited-place__item">
-                <label class="visited-place__item__field control ">
+                <label class="visited-place__field control ">
                   <input class="control__input" type="checkbox" name="slide-park" checked>
                   <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="visited-place__item">
-                <label class="visited-place__item__field control ">
+                <label class="visited-place__field control ">
                   <input class="control__input" type="checkbox" name="red-rocks">
                   <span class="control__label">Красные скалы</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form__fieldset text-review">
+          <fieldset class="review__fieldset text-review">
             <b class="text-review__title">Опишите свои эмоции:</b>
             <textarea class="text-review__message" name="text-review" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
-          <button class="review__form__button button button--review-form" type="submit">Отправить отзыв</button>
-          <span class="review__form__button-description">* — обязательные поля</span>
+          <button class="review__button button button--review-form" type="submit">Отправить отзыв</button>
+          <span class="review__button-description">* — обязательные поля</span>
         </form>
       </section>
     </main>
@@ -168,7 +168,7 @@
         <div class="copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
-            <img class="copyright__link__image" src="img/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
+            <img class="copyright__image" src="img/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
       </div>
