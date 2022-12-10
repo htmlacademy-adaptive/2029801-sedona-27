@@ -4,6 +4,20 @@
   padding-bottom: 49px;
 }
 
+@media (min-width: @tablet-width) {
+  .invitation__wrapper {
+    padding-top: 72px;
+    padding-bottom: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation__wrapper {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
+}
+
 .invitation__title {
   font-size: 21px;
   line-height: 26px;
@@ -11,9 +25,23 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .invitation__title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
 .invitation__description {
   text-transform: uppercase;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 18px;
   margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__description {
+    margin-top: 26px;
+    margin-bottom: 40px;
+  }
 }
