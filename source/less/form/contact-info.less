@@ -5,11 +5,32 @@
   margin-top: 64px;
 }
 
+@media (min-width: @tablet-width) {
+  .contact-info {
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
 .contact-info__legend {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-info__legend {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-info__field-wrapper {
+    padding-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contact-info__list {
@@ -26,6 +47,12 @@
   text-align: start;
 }
 
+@media (min-width: @tablet-width) {
+  .contact-info__item {
+    margin-left: auto;
+  }
+}
+
 .contact-info__title {
   text-transform: uppercase;
   margin-left: 16px;
@@ -40,4 +67,10 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+}
+
+@media (min-width: @desktop-width) {
+  .contact-info__field {
+    width: 402px;
+  }
 }

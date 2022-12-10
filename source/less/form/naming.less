@@ -5,6 +5,20 @@
   margin-top: 53px;
 }
 
+@media (min-width: @tablet-width) {
+  .naming {
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .naming__field-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .naming__legend {
   font-size: 18px;
   line-height: 26px;
@@ -40,4 +54,10 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+}
+
+@media (min-width: @desktop-width) {
+  .naming__field {
+    width: 430px;
+  }
 }

@@ -7,15 +7,40 @@
   padding-bottom: 46px;
   text-align: left;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   row-gap: 25px;
   background-color: @white;
   color: @black;
 }
 
+@media (min-width: @tablet-width) {
+  .city-advantages {
+    flex-direction: row;
+    row-gap: 0;
+    padding: 0;
+  }
+}
+
 .city-advantages__item {
   padding-left: 47px;
   padding-top: 8px;
+}
+
+@media (min-width: @tablet-width) {
+  .city-advantages__item {
+    width: 256px;
+    box-sizing: border-box;
+    padding: 158px 33px 60px 33px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .city-advantages__item {
+    width: 400px;
+    padding: 167px 50px 71px 50px;
+  }
 }
 
 .city-advantages__title {
@@ -48,4 +73,22 @@
   background-size: 40px 40px;
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .city-advantages__item--housing,
+  .city-advantages__item--food,
+  .city-advantages__item--souvenirs {
+    background-size: 77px 72px;
+    background-position: 50% 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .city-advantages__item--housing,
+  .city-advantages__item--food,
+  .city-advantages__item--souvenirs {
+    background-size: 79.5px 73.5px;
+    background-position: 50% 69px;
+  }
 }

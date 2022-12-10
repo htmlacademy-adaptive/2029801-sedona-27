@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,10 +19,12 @@
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="index.html">Главная</a>
+              <a class="main-navigation__link">Главная</a>
             </li>
-            <li class="main-navigation__item main-navigation__item--current">
-              <a class="main-navigation__link">Фото и видео</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link main-navigation__item--current" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="form.html">Форма отзыва</a>
@@ -47,48 +50,64 @@
         <div class="photo-gallery__wrapper">
           <h2 class="visually-hidden">Галлерея фотографий</h2>
           <ul class="photo-gallery__list">
-            <li class="photo-gallery__item photo-card">
+            <li class="photo-gallery__item photo-card photo-card--big">
               <a href="#" class="photo-card__link">
                 <img class="photo-card__image" src="img/gallery/road.jpg" width="280" height="280" alt="Машина едет по шоссе в Седоне">
               </a>
-              <b class="photo-card__title">Неродные просторы</b>
-              <cite class="photo-card__author">Автор фото: Борис</cite>
-              <div class="photo-card__like-stats like-stats">
-                <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
-                <b class="like-stats__counter">1350</b>
+              <div class="photo-card__info photo-card__info--big">
+                <div class="photo-card__image-info">
+                  <b class="photo-card__title">Неродные просторы</b>
+                  <cite class="photo-card__author">Автор фото: Борис</cite>
+                </div>
+                <div class="photo-card__like-stats like-stats">
+                  <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
+                  <b class="like-stats__counter">1350</b>
+                </div>
               </div>
             </li>
             <li class="photo-gallery__item photo-card">
               <a href="#" class="photo-card__link">
                 <img class="photo-card__image" src="img/gallery/plant.jpg" width="280" height="280" alt="Растение в Седоне">
               </a>
-              <b class="photo-card__title">Местная растительность</b>
-              <cite class="photo-card__author">Автор фото: Сергей</cite>
-              <div class="photo-card__like-stats like-stats">
-                <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
-                <b class="like-stats__counter">143</b>
+              <div class="photo-card__info">
+                <div class="photo-card__image-info">
+                  <b class="photo-card__title">Местная растительность</b>
+                  <cite class="photo-card__author">Автор фото: Сергей</cite>
+                </div>
+                <div class="photo-card__like-stats like-stats">
+                  <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
+                  <b class="like-stats__counter">143</b>
+                </div>
               </div>
             </li>
             <li class="photo-gallery__item photo-card">
               <a href="#" class="photo-card__link">
                 <img class="photo-card__image" src="img/gallery/north-road.jpg" width="280" height="280" alt="Дорога в Седоне">
               </a>
-              <b class="photo-card__title">Дорога на север</b>
-              <cite class="photo-card__author">Автор фото: Петр</cite>
-              <div class="photo-card__like-stats like-stats">
-                <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
-                <b class="like-stats__counter">96</b>
+              <div class="photo-card__info">
+                <div class="photo-card__image-info">
+                  <b class="photo-card__title">Дорога на север</b>
+                  <cite class="photo-card__author">Автор фото: Петр</cite>
+                </div>
+                <div class="photo-card__like-stats like-stats">
+                  <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
+                  <b class="like-stats__counter">96</b>
+                </div>
               </div>
             </li>
             <li class="photo-gallery__item photo-card">
               <a href="#" class="photo-card__link">
                 <img class="photo-card__image" src="img/gallery/devil-bridge.jpg" width="280" height="280" alt="Достопримечательность 'Мост Дьявола'">
               </a>
-              <b class="photo-card__title">Мост Дьявола</b>
-              <cite class="photo-card__author">Автор фото: Антон</cite>
-              <div class="photo-card__like-stats like-stats">
-                <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
-                <b class="like-stats__counter">254</b>
+              <div class="photo-card__info">
+                <div class="photo-card__image-info">
+                  <b class="photo-card__title">Мост Дьявола</b>
+                  <cite class="photo-card__author">Автор фото: Антон</cite>
+                </div>
+                <div class="photo-card__like-stats like-stats">
+                  <img class="like-stats__image" src="img/like-icon.svg" width="23" height="21" alt="Оценить 'Мне нравится'">
+                  <b class="like-stats__counter">254</b>
+                </div>
               </div>
             </li>
           </ul>

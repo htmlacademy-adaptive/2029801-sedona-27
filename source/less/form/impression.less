@@ -5,6 +5,22 @@
   margin-top: 57px;
 }
 
+@media (min-width: @tablet-width) {
+  .impression {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression {
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
 .impression__title {
   font-size: 18px;
   line-height: 26px;
@@ -21,6 +37,22 @@
   margin-bottom: 0;
   margin-top: 22px;
   align-items: flex-start;
+}
+
+@media (min-width: @tablet-width) {
+  .impression__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 28px;
+  }
 }
 
 .impression__item {

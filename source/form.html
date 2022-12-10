@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма отзыва</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -18,13 +19,15 @@
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="index.html">Главная</a>
+              <a class="main-navigation__link">Главная</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
             </li>
+            <li class="main-navigation__item">
+            </li>
             <li class="main-navigation__item main-navigation__item--current">
-              <a class="main-navigation__link">Форма отзыва</a>
+              <a class="main-navigation__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="#">HTML Academy</a>
@@ -46,43 +49,50 @@
       <section class="review">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="review__form" method="post" action="https://echo.htmlacademy.ru/">
-          <fieldset class="review__fieldset naming">
-            <legend class="naming__legend">Представьтесь:</legend>
-            <ul class="naming__list">
-              <li class="naming__item">
-                <label class="naming__title">Имя*:
-                  <input class="naming__field" type="text" placeholder="Введите ваше имя" name="name" value="Пётр" required>
-                </label>
-              </li>
-              <li class="naming__item">
-                <label class="naming__title">Фамилия*:
-                  <input class="naming__field" type="text" placeholder="Введите вашу фамилию" name="surname" value="Пустота" required>
-                </label>
-              </li>
-              <li class="naming__item">
-                <label class="naming__title">Отчество*:
-                  <input class="naming__field" type="text" placeholder="Введите ваше отчество" name="middle-name" value="Викторович" required>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review__fieldset contact-info">
-            <legend class="contact-info__legend">Контактная информация:</legend>
-            <ul class="contact-info__list">
-              <li class="contact-info__item">
-                <label class="contact-info__title">Контактный телефон*:
-                  <input class="contact-info__field" type="tel" placeholder="Введите телефон" required>
-                </label>
-                <div class="contact-info__icon phone-icon"></div>
-              </li>
-              <li class="contact-info__item">
-                <label class="contact-info__title">Электронная почта*::
-                  <input class="contact-info__field" type="email" placeholder="Введите e-mail" required>
-                </label>
-                <div class="contact-info__icon email-icon"></div>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="review__grid">
+            <fieldset class="review__fieldset naming">
+              <legend class="naming__legend">Представьтесь:</legend>
+              <ul class="naming__list">
+                <li class="naming__item">
+                  <div class="naming__field-wrapper">
+                    <label class="naming__title" for="name">Имя*:</label>
+                    <input class="naming__field" type="text" placeholder="Введите ваше имя" name="name" id="name" value="Пётр" required>
+                  </div>
+                </li>
+                <li class="naming__item">
+                  <div class="naming__field-wrapper">
+                    <label class="naming__title" for="surname">Фамилия*:</label>
+                    <input class="naming__field" type="text" placeholder="Введите вашу фамилию" name="surname" id="surname" value="Пустота" required>
+                  </div>
+                </li>
+                <li class="naming__item">
+                  <div class="naming__field-wrapper">
+                    <label class="naming__title" for="middle-name">Отчество*:</label>
+                    <input class="naming__field" type="text" placeholder="Введите ваше отчество" name="middle-name" id="middle-name" value="Викторович" required>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="review__fieldset contact-info">
+              <legend class="contact-info__legend">Контактная информация:</legend>
+              <ul class="contact-info__list">
+                <li class="contact-info__item">
+                  <div class="contact-info__field-wrapper">
+                    <label class="contact-info__title" for="tel">Контактный телефон*:</label>
+                    <input class="contact-info__field" type="tel" id="tel" placeholder="Введите телефон" required>
+                    <div class="contact-info__icon phone-icon"></div>
+                  </div>
+                </li>
+                <li class="contact-info__item">
+                  <div class="contact-info__field-wrapper">
+                    <label class="contact-info__title" for="email">Электронная почта*:</label>
+                    <input class="contact-info__field" type="email" id="email" placeholder="Введите e-mail" required>
+                    <div class="contact-info__icon email-icon"></div>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="review__fieldset impression">
             <legend class="impression__title">Ваше общее впечатление:</legend>
             <ul class="impression__list">
@@ -139,8 +149,10 @@
             <b class="text-review__title">Опишите свои эмоции:</b>
             <textarea class="text-review__message" name="text-review" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
-          <button class="review__button button button--review-form" type="submit">Отправить отзыв</button>
-          <span class="review__button-description">* — обязательные поля</span>
+          <div class="review__button-wrapper">
+            <button class="review__button button button--review-form" type="submit">Отправить отзыв</button>
+            <span class="review__button-description">* — обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
