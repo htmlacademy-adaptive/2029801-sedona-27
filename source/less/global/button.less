@@ -5,19 +5,32 @@
   font-weight: 700;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: @light-blue;
+  color: @white;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @button-disabled;
+  }
 }
 
 .button--hotel-search {
   width: 280px;
-}
 
-@media (min-width: @tablet-width) {
-  .button--hotel-search {
+  @media (min-width: @tablet-width) {
     width: 458px;
   }
 }
@@ -27,17 +40,13 @@
   margin-left: 20px;
   display: block;
   box-sizing: border-box;
-}
 
-@media (min-width: @tablet-width) {
-  .button--review-form {
+  @media (min-width: @tablet-width) {
     width: 324px;
     margin-left: 60px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .button--review-form {
+  @media (min-width: @desktop-width) {
     width: 384px;
     margin-left: 216px;
   }
@@ -45,20 +54,16 @@
 
 .button--modal-button {
   width: 280px;
-}
 
-@media (min-width: @tablet-width) {
-  .button--modal-button {
+  @media (min-width: @tablet-width) {
     width: 458px;
   }
 }
 
 .button--modal-error-button {
   width: 180px;
-}
 
-@media (min-width: @tablet-width) {
-  .button--modal-error-button {
+  @media (min-width: @tablet-width) {
     width: 272px;
   }
 }

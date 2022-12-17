@@ -1,14 +1,12 @@
-@media (min-width: @tablet-width) {
-  .review__grid {
+.review__grid {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 60px;
     padding-right: 60px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .review__grid {
+  @media (min-width: @desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -20,8 +18,8 @@
   border: none;
 }
 
-@media (min-width: @tablet-width) {
-  .review__button-wrapper {
+.review__button-wrapper {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,17 +35,13 @@
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 24px;
-}
 
-@media (min-width: @tablet-width) {
-  .review__button-description {
+  @media (min-width: @tablet-width) {
     margin: 0;
     margin-right: 60px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .review__button-description {
+  @media (min-width: @desktop-width) {
     margin-right: 216px;
   }
 }
