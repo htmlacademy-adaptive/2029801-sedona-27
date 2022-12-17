@@ -1,0 +1,35 @@
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 6px;
+  padding-left: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+}
+
+.social__link {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @light-blue;
+
+  &:hover {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-active;
+    fill-opacity: 0.3;
+  }
+}
