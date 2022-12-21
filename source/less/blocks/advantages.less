@@ -60,6 +60,10 @@
   }
 }
 
+.advantages__grid--reverse .advantages__text-box {
+  order: 2;
+}
+
 .advantages__text-box {
   @media (min-width: @tablet-width) {
     padding-top: 42px;
@@ -135,24 +139,16 @@
 .advantages__image {
   margin-top: 40px;
   display: block;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
   }
 }
 
-.advantages__image--city {
-  @media (min-width: @tablet-width) {
-    width: 512px;
-    height: 256px;
-  }
-}
-
 .advantages__image--bridge {
   @media (min-width: @tablet-width) {
-    width: 512px;
-    height: 256px;
-    order: -1;
+    order: 1;
   }
 }
 
