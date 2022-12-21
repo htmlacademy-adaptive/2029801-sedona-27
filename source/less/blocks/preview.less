@@ -10,14 +10,30 @@
   background-repeat: no-repeat, no-repeat;
   background-position-y: 100%, center;
   background-color: @hero-gray;
-  background-size: 320px 57px, 320px 389px;
   box-sizing: border-box;
+  background-size: 100% auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero-divider.svg"), url("../img/hero/hero-background@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 77px;
     padding-bottom: 91px;
     background-image: url("../img/hero/hero-divider-tablet.svg"), url("../img/hero/hero-background-tablet.jpg");
-    background-size: 768px 57px, 768px 518px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-divider-tablet.svg"), url("../img/hero/hero-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 90px;
+    background-image: url("../img/hero/hero-divider-tablet.svg"), url("../img/hero/hero-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-divider-tablet.svg"), url("../img/hero/hero-background-desktop@2x.jpg");
+    }
   }
 }
 

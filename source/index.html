@@ -5,6 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Седона</title>
       <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="img/favicons/apple.png">
+      <link rel="manifest" href="manifest.webmanifest">
     </head>
     <body class="page__body">
       <header class="main-header">
@@ -58,7 +62,11 @@
                     <p class="advantages__number">— №1 —</p>
                     <p class="advantages__description">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
                   </div>
-                  <img class="advantages__image advantages__image--city" src="img/advantages/sedona-city.jpg" width="320" height="260" alt="Городок Седоны">
+                  <picture>
+                    <source media="(min-width: 1200px" srcset="img/advantages/sedona-city-desktop.jpg 1x, img/advantages/sedona-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px" srcset="img/advantages/sedona-city-tablet.jpg 1x, img/advantages/sedona-city-tablet@2x.jpg 2x">
+                    <img class="advantages__image advantages__image--city" src="img/advantages/sedona-city.jpg" srcset="img/advantages/sedona-city@2x.jpg 2x" width="320" height="260" alt="Городок Седоны">
+                  </picture>
                 </div>
                 <div class="advantages__city-advantages-wrapper">
                   <h4 class="visually-hidden">Преймущества городка</h4>
@@ -85,7 +93,11 @@
                     <p class="advantages__number">— №2 —</p>
                     <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
-                  <img class="advantages__image advantages__image--bridge" src="img/devil-bridge.jpg" width="320" height="260" alt="Мост дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px" srcset="img/advantages/devil-bridge-desktop.jpg 1x, img/advantages/devil-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px" srcset="img/advantages/devil-bridge-tablet.jpg 1x, img/advantages/devil-bridge-tablet@2x.jpg 2x">
+                    <img class="advantages__image advantages__image--bridge" src="img/advantages/devil-bridge.jpg" srcset="img/advantages/devil-bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
+                  </picture>
                 </div>
               </li>
               <li class="advantages__item advantages__item--fill-secondary">
@@ -117,7 +129,11 @@
         <section class="map">
           <div class="map__wrapper">
             <h2 class="visually-hidden">Где мы находимся?</h2>
-            <img class="map__image" src="img/map.png" width="320" height="350" alt="Седона находитя в Аризоне под городом Флагстафф в сторону города Финикс">
+            <picture>
+              <source media="(min-width: 1200px" srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
+              <img class="map__image" src="img/map/map.png" width="320" height="350" srcset="img/map/map@2x.png 2x" alt="Седона находитя в Аризоне под городом Флагстафф в сторону города Финикс">
+            </picture>
           </div>
         </section>
       </main>
