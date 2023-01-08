@@ -23,9 +23,36 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    margin-right: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
-.copyright__image {
+.copyright__link--catalog {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-left: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 34px;
+  }
+}
+
+.copyright__link--form {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    margin-left: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 34px;
+  }
+}
+
+.copyright__icon {
   fill: currentColor;
 }
