@@ -4,11 +4,15 @@
     grid-template-columns: 1fr 1fr;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 15px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 120px;
     padding-right: 120px;
+    grid-template-columns: 494px 466px;
+    margin-bottom: 42px;
   }
 }
 
@@ -16,6 +20,23 @@
   margin: 0;
   padding: 0;
   border: none;
+  border-bottom: 1px solid @button-disabled;
+
+  &:first-child {
+    border-top: 1px solid @button-disabled;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
 }
 
 .review__button-wrapper {
@@ -39,6 +60,7 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-right: 60px;
+    font-size: 14px;
   }
 
   @media (min-width: @desktop-width) {

@@ -65,9 +65,20 @@
 }
 
 .advantages__text-box {
+  padding-left: 18px;
+  padding-right: 18px;
+
   @media (min-width: @tablet-width) {
-    padding-top: 42px;
-    padding-bottom: 41px;
+    padding-top: 52px;
+    padding-bottom: 31px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -82,25 +93,43 @@
   background-color: @gray;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 26px;
+  padding-right: 26px;
+
+  &:last-child {
+    padding-bottom: 28px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @advantages-border;
+  }
 
   @media (min-width: @tablet-width) {
     padding-top: 52px;
     padding-bottom: 52px;
     width: 256px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
+    padding-top: 63px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 41px;
   }
 }
 
 .advantages__item--middle {
   @media (min-width: @tablet-width) {
     padding-top: 41px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 52px;
+    padding-bottom: 51px;
   }
 }
 
@@ -122,18 +151,72 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__title br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .advantages__number {
   text-transform: uppercase;
   margin: 0;
   margin-top: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
+  }
 }
 
 .advantages__description {
   text-transform: uppercase;
   margin: 0;
   margin-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+  }
+}
+
+.advantages__mobile-break {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.advantages__tablet-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__desktop-break {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__not-mobile-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .advantages__image {
@@ -143,6 +226,7 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
+    height: 256px;
   }
 }
 

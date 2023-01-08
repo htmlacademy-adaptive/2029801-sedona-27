@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+    <svg style="display: none;">
+      <symbol viewbox="0 0 27 35" id="html-academy-icon">
+        <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+      </symbol>
+    </svg>
     <header class="main-header">
       <a class="main-header__logo logo">
         <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
@@ -38,12 +43,12 @@
     </header>
     <main class="main-container">
       <section class="preview">
-        <div class="preview__hero">
-          <img class="preview__text" src="img/hero/hero-text-secondary.svg" width="229" height="39" alt="Sedona">
+        <div class="preview__hero preview__hero--cut-background">
+          <img class="preview__text preview__text--form" src="img/hero/hero-text-secondary.svg" width="229" height="39" alt="Sedona">
         </div>
-        <div class="preview__introduction-wrapper">
-          <h1 class="preview__introduction">Оставьте свой отзыв</h1>
-          <p class="preview__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <div class="preview__introduction-wrapper preview__introduction-wrapper--form">
+          <h1 class="preview__introduction preview__introduction--form">Оставьте свой отзыв</h1>
+          <p class="preview__description preview__description--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
       <section class="review">
@@ -51,7 +56,7 @@
         <form class="review__form" method="post" action="https://echo.htmlacademy.ru/">
           <div class="review__grid">
             <fieldset class="review__fieldset naming">
-              <legend class="naming__legend">Представьтесь:</legend>
+              <b class="naming__legend">Представьтесь:</b>
               <ul class="naming__list">
                 <li class="naming__item">
                   <div class="naming__field-wrapper">
@@ -74,7 +79,7 @@
               </ul>
             </fieldset>
             <fieldset class="review__fieldset contact-info">
-              <legend class="contact-info__legend">Контактная информация:</legend>
+              <b class="contact-info__legend">Контактная информация:</b>
               <ul class="contact-info__list">
                 <li class="contact-info__item">
                   <div class="contact-info__item-wrapper">
@@ -98,7 +103,9 @@
             </fieldset>
           </div>
           <fieldset class="review__fieldset impression">
-            <legend class="impression__title">Ваше общее впечатление:</legend>
+            <b class="impression__title">
+              <span class="impression__title-text">Ваше общее впечатление:</span>
+            </b>
             <ul class="impression__list">
               <li class="impression__item">
                 <label class="impression__field control ">
@@ -124,7 +131,9 @@
             </ul>
           </fieldset>
           <fieldset class="review__fieldset visited-place">
-            <legend class="visited-place__title">Посещенные достопримечательности:</legend>
+            <b class="visited-place__title">
+              <span class="visited-place__title-text">Посещенные<br>достопримечательности:</span>
+            </b>
             <ul class="visited-place__list">
               <li class="visited-place__item">
                 <label class="visited-place__field control ">
@@ -168,11 +177,11 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper main-footer__wrapper--form">
         <div class="main-footer__hashtag">
           <b>#visitsedona</b>
         </div>
-        <div class="main-footer__social social">
+        <div class="main-footer__social main-footer__social--form social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -201,27 +210,33 @@
           </ul>
         </div>
         <div class="copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
+          <a class="copyright__link copyright__link--form" href="https://htmlacademy.ru/intensive/adaptive" >
             <span class="copyright__text">Разработано</span>
-            <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"/>
+            <svg class="copyright__icon" width="27" height="34">
+              <use href="#html-academy-icon"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>
     </footer>
-    <div class="modal-container">
-      <div class="modal-container__content modal">
-        <b class="modal__title">Ваш отзыв отправлен</b>
-        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="button button--modal-button">Закрыть окно</button>
+    <div class="modal modal--close">
+      <div class="modal__container">
+        <div class="modal__text-container">
+          <b class="modal__title">Ваш отзыв отправлен!</b>
+          <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__button-container">
+          <button class="button button--modal-button">Закрыть окно</button>
+        </div>
       </div>
     </div>
-    <div class="modal-container">
-      <div class="modal-container__content modal modal--error">
-        <b class="modal__title">Что-то пошло не так!</b>
-        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <div class="modal modal--close">
+      <div class="modal__container modal__container--error">
+        <div class="modal__text-container modal__text-container--error">
+          <b class="modal__title modal__title--error">Что-то пошло не&nbsp;так!</b>
+          <p class="modal__description modal__description--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
         <button class="button button--modal-error-button">Ок</button>
       </div>
     </div>
