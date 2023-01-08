@@ -2,18 +2,20 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 57px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 120px;
     margin-right: 120px;
-    padding-left: 53px;
-    padding-right: 53px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -22,6 +24,32 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    font-size: 21px;
+    display: block;
+  }
+}
+
+.impression__title::before {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    background-color: @form-divider;
+    z-index: -1;
+  }
+}
+
+.impression__title-text {
+  @media (min-width: @tablet-width) {
+    padding: 0 66px;
+    background-color: @white;
+  }
 }
 
 .impression__list {
@@ -35,15 +63,20 @@
   align-items: flex-start;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 49px;
     text-align: center;
+    margin-top: 28px;
+    margin-left: 36px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 28px;
+    column-gap: 63px;
+    margin-top: 43px;
+    margin-left: 55px;
   }
 }
 

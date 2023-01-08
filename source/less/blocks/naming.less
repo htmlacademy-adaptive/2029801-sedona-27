@@ -2,11 +2,16 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 53px;
+  padding-top: 24px;
+  padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
     padding: 0;
+    border-right: 1px solid @form-divider;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 15px;
   }
 }
 
@@ -22,6 +27,11 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .naming__list {
@@ -32,6 +42,10 @@
   row-gap: 16px;
   margin-bottom: 0;
   margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+  }
 }
 
 .naming__item {
@@ -49,6 +63,7 @@
   width: 280px;
   padding: 16px;
   box-sizing: border-box;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;

@@ -1,16 +1,66 @@
 .modal {
-  padding-top: 39px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: @photo-card-info-black;
+  z-index: 3;
 }
 
-.modal--error {
+.modal--close {
+  display: none;
+}
+
+.modal__container {
+  background-color: @white;
+  margin: auto;
+  padding-top: 39px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 640px;
+    padding-top: 51px;
+  }
+}
+
+.modal__container--error {
   padding-top: 45px;
   padding-bottom: 35px;
-  padding-left: 42px;
+  padding-left: 41px;
   padding-right: 42px;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    padding-top: 48px;
+    padding-bottom: 49px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.modal__text-container {
+  margin-left: 37px;
+  margin-right: 39px;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 97px;
+    margin-right: 99px;
+    margin-bottom: 52px;
+  }
+}
+
+.modal__text-container--error {
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 46px;
+    margin-right: 47px;
+    margin-bottom: 46px;
+  }
 }
 
 .modal__title {
@@ -18,11 +68,35 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.modal__title--error {
+  @media (min-width: @tablet-width) {
+    line-height: 40px;
+  }
 }
 
 .modal__description {
   text-transform: uppercase;
   margin: 0;
   margin-top: 26px;
-  margin-bottom: 28px;
+}
+
+.modal__description--error {
+  @media (min-width: @tablet-width) {
+    margin-top: 24px;
+  }
+}
+
+.modal__button-container {
+  padding: 20px;
+  background-color: @form-field-gray;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 91px;
+  }
 }

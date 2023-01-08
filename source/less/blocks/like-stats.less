@@ -1,0 +1,32 @@
+.like-stats {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.like-stats--not-big {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.like-stats__image {
+  margin-right: 10px;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    opacity: 1;
+    fill: @white;
+  }
+}
+
+.like-stats__counter {
+  display: inline-block;
+  padding-top: 5px;
+}
