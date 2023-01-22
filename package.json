@@ -27,15 +27,7 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp",
-    "html": "gulp html",
-    "scripts": "gulp scripts",
-    "optimizeImages": "gulp optimizeImages",
-    "copyImages": "gulp copyImages",
-    "createWebp": "gulp createWebp",
-    "svg": "gulp svg",
-    "sprite": "gulp sprite",
-    "copy": "gulp copy",
-    "clean": "gulp del"
+    "createWebp": "gulp createWebp"
   },
   "browserslist": [
     "last 2 versions",

@@ -29,7 +29,6 @@ const styles = () => {
 
 export const html = (done) => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
     done();
 }
@@ -101,7 +100,7 @@ export const copy = (done) => {
 // Clean
 
 export const del = () => {
-  return gulp.src('build', {read: false})
+  return gulp.src('build', {read: false, allowEmpty: true})
       .pipe(clean());
 };
 
@@ -153,7 +152,7 @@ export const build = gulp.series(
 // Default
 
 export default gulp.series(
-  clean,
+  del,
   copy,
   copyImages,
   gulp.parallel(
