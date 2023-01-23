@@ -73,6 +73,7 @@
 }
 .button--hotel-search {
   width: 284px;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .button--hotel-search {
@@ -983,9 +984,17 @@
     display: block;
   }
 }
-.map__image {
-  width: 100%;
-  height: auto;
+@media (min-width: 768px) {
+  .map {
+    width: 768px;
+    height: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  .map {
+    width: 1200px;
+    height: 350px;
+  }
 }
 .main-footer__wrapper {
   text-align: center;
@@ -1283,11 +1292,20 @@
     margin-top: 0;
   }
 }
+.like-stats {
+  color: #000000;
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   .like-stats {
     padding-bottom: 6px;
     display: flex;
     justify-content: end;
+  }
+}
+@media (min-width: 1200px) {
+  .like-stats {
+    color: #ffffff;
   }
 }
 @media (min-width: 1200px) {
@@ -1736,6 +1754,9 @@
 }
 .control__label:hover ~ .control__mark {
   background-color: #e5e5e5;
+}
+.control__input:focus + span {
+  outline: solid 1px #000000;
 }
 .control__input[type="radio"] ~ .control__mark {
   border-radius: 50%;

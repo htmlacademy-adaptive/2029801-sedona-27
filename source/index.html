@@ -65,6 +65,9 @@
                   <p class="advantages__description">Седона не аттракцион для туристов, там&nbsp;течёт своя жизнь</p>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/sedona-city-desktop.webp 1x, img/advantages/sedona-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/sedona-city-tablet.webp 1x, img/advantages/sedona-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/advantages/sedona-city.webp 1x, img/advantages/sedona-city@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/advantages/sedona-city-desktop.jpg 1x, img/advantages/sedona-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages/sedona-city-tablet.jpg 1x, img/advantages/sedona-city-tablet@2x.jpg 2x">
                   <img class="advantages__image advantages__image--city" src="img/advantages/sedona-city.jpg" srcset="img/advantages/sedona-city@2x.jpg 2x" width="320" height="260" alt="Городок Седоны">
@@ -105,6 +108,9 @@
                   <p class="advantages__description">Да, по нему можно пройти!<br class="advantages__desktop-break">Если вы осмелитесь, конечно</p>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/devil-bridge-desktop.webp 1x, img/advantages/devil-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/devil-bridge-tablet.webp 1x, img/advantages/devil-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/advantages/devil-bridge.webp 1x, img/advantages/devil-bridge@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/advantages/devil-bridge-desktop.jpg 1x, img/advantages/devil-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages/devil-bridge-tablet.jpg 1x, img/advantages/devil-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__image advantages__image--bridge" src="img/advantages/devil-bridge.jpg" srcset="img/advantages/devil-bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
@@ -134,16 +140,14 @@
           <h2 class="visually-hidden">Поиск отеля</h2>
           <b class="invitation__title">Заинтересовались?</b>
           <p class="invitation__description">Укажите предполагаемые даты поездки,<br>&nbsp;и&nbsp;мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button button--hotel-search">Найти гостиницу</a>
+          <a class="button button--hotel-search" href="#">Найти гостиницу</a>
         </div>
       </section>
       <section class="map">
         <div class="map__wrapper">
           <h2 class="visually-hidden">Где мы находимся?</h2>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/map/map-desktop.png 1x, img/map/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x.png 2x">
-            <img class="map__image" src="img/map/map.png" width="320" height="350" srcset="img/map/map@2x.png 2x" alt="Седона находитя в Аризоне под городом Флагстафф в сторону города Финикс">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593132.9347390551!2d-111.86786661136543!3d34.79015164482717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1674487643936!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </picture>
         </div>
       </section>
@@ -185,7 +189,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
             <span class="copyright__text">Разработано</span>
             <svg class="copyright__icon" width="27" height="34">
-              <use href="img/sprite#htmlacademy-logo"></use>
+              <use href="img/sprite.svg#htmlacademy-logo"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>

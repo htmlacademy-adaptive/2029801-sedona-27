@@ -74,7 +74,11 @@ export const svg = () => {
 
 export const sprite = () => {
   return gulp.src('source/img/sprite-icons/*.svg')
-    .pipe(svgo())
+    .pipe(svgo({
+      plugins: [{
+        removeViewBox: false
+      }]
+    }))
     .pipe(svgstore({
       inlineSvg: true
     }))
