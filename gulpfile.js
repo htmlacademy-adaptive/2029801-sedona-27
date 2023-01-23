@@ -4,7 +4,6 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
-import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
@@ -75,8 +74,11 @@ export const svg = () => {
 export const sprite = () => {
   return gulp.src('source/img/sprite-icons/*.svg')
     .pipe(svgo({
+      removeAttrs: {
+        attrs: ['fill']
+      },
       plugins: [{
-        removeViewBox: false
+        removeViewBox: false,
       }]
     }))
     .pipe(svgstore({
