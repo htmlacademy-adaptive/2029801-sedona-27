@@ -388,7 +388,7 @@
   .preview__introduction-wrapper {
     padding-left: 357px;
     padding-right: 359px;
-    padding-top: 59px;
+    padding-top: 61px;
     padding-bottom: 44px;
   }
 }
@@ -458,7 +458,7 @@
 }
 @media (min-width: 768px) {
   .preview__description {
-    margin-top: 27px;
+    margin-top: 30px;
   }
 }
 .preview__description--catalog {
@@ -593,8 +593,8 @@
 }
 @media (min-width: 768px) {
   .advantages__text-box {
-    padding-top: 52px;
-    padding-bottom: 31px;
+    padding-top: 54px;
+    padding-bottom: 30px;
     padding-left: 33px;
     padding-right: 33px;
   }
@@ -815,7 +815,7 @@
 @media (min-width: 1200px) {
   .city-advantages__item--housing {
     padding-top: 69px;
-    padding-bottom: 69px;
+    padding-bottom: 67px;
   }
 }
 @media (min-width: 768px) {
@@ -826,7 +826,7 @@
 @media (min-width: 1200px) {
   .city-advantages__item--food {
     padding-top: 72px;
-    padding-bottom: 71px;
+    padding-bottom: 69px;
   }
 }
 @media (min-width: 768px) {
@@ -837,7 +837,7 @@
 @media (min-width: 1200px) {
   .city-advantages__item--souvenirs {
     padding-top: 69px;
-    padding-bottom: 67px;
+    padding-bottom: 65px;
   }
 }
 .city-advantages__title {
@@ -891,7 +891,7 @@
     width: 79.5px;
     height: 72.5px;
     margin: 0;
-    margin-bottom: 27.6px;
+    margin-bottom: 22.6px;
   }
 }
 .city-advantages__icon--food {
@@ -910,17 +910,16 @@
     width: 73px;
     height: 69px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 .city-advantages__icon--souvenirs {
   margin-top: 1px;
-  margin-left: 4px;
 }
 @media (min-width: 768px) {
   .city-advantages__icon--souvenirs {
-    width: 66.5px;
-    height: 75px;
+    width: 86px;
+    height: 77px;
     margin: 0;
     margin-bottom: 8px;
   }
@@ -930,7 +929,7 @@
     width: 77.5px;
     height: 75px;
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 }
 .invitation__wrapper {
@@ -971,9 +970,14 @@
 @media (min-width: 768px) {
   .invitation__description {
     margin-top: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     margin-left: 160px;
     margin-right: 160px;
+  }
+}
+@media (min-width: 768px) {
+  .invitation__description {
+    margin-bottom: 48px;
   }
 }
 .invitation__description br {
@@ -1808,6 +1812,7 @@
   .visited-place {
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 26px;
   }
 }
 @media (min-width: 1200px) {
@@ -1900,6 +1905,11 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 24px;
+}
+@media (min-width: 768px) {
+  .text-review {
+    padding-top: 21px;
+  }
 }
 @media (min-width: 1200px) {
   .text-review {

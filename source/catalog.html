@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео</title>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo logo">
+      <a class="main-header__logo logo" href="index.html">
         <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
@@ -29,7 +35,7 @@
               <a class="main-navigation__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">HTML Academy</a>
+              <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -168,7 +174,7 @@
             </picture>
             <button class="video-gallery__play-button" type="button">
               <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M48 27L0 54V0l48 27z" fill="#fff" fill-opacity=".7"/>
+                <use href="img/sprite.svg#video-button"></use>
               </svg>
               <span class="visually-hidden">Воспроизвести видео</span>
             </button>
