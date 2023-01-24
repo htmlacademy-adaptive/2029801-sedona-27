@@ -54,6 +54,11 @@
   text-transform: uppercase;
   text-align: center;
   min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 7px;
 
   &:not(:last-child) {
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -89,6 +94,8 @@
 
   @media (min-width: @tablet-width) {
     min-width: 153px;
+    padding-top: 13px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: @desktop-width) {
@@ -107,15 +114,14 @@
 .main-navigation__link {
   text-decoration: none;
   color: @white;
-  line-height: 55px;
+  line-height: 26px;
   display: block;
-  width: 100%;
-  height: 100%;
+  padding: 5px;
 
   @media (min-width: @tablet-width) {
     color: @black;
     font-size: 14px;
-    line-height: 58px;
+    line-height: 21px;
 
     &:hover {
       color: @light-blue;
