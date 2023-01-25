@@ -3,6 +3,7 @@ import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import csso from 'postcss-csso';
 import browser from 'browser-sync';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
@@ -14,14 +15,16 @@ import clean from 'gulp-clean';
 // Styles
 
 const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
+return gulp.src('source/less/style.less', { sourcemaps: true })
+  .pipe(plumber())
+  .pipe(less())
+  .pipe(postcss([
+  autoprefixer(),
+  csso()
+  ]))
+  .pipe(rename('style.min.css'))
+  .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+  .pipe(browser.stream());
 }
 
 // HTML
