@@ -15,16 +15,16 @@ import clean from 'gulp-clean';
 // Styles
 
 const styles = () => {
-return gulp.src('source/less/style.less', { sourcemaps: true })
-  .pipe(plumber())
-  .pipe(less())
-  .pipe(postcss([
-  autoprefixer(),
-  csso()
-  ]))
-  .pipe(rename('style.min.css'))
-  .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-  .pipe(browser.stream());
+  return gulp.src('source/less/style.less', { sourcemaps: true })
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(browser.stream());
 }
 
 // HTML
@@ -32,15 +32,15 @@ return gulp.src('source/less/style.less', { sourcemaps: true })
 export const html = (done) => {
   return gulp.src('source/*.html')
     .pipe(gulp.dest('build'))
-    done();
+  done();
 }
 
 // Scripts
 
 export const scripts = () => {
   return gulp.src('source/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'));
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'));
 }
 
 // Images
@@ -100,8 +100,8 @@ export const copy = (done) => {
     'source/favicons/*.{png, svg}',
     'source/manifest.webmanifest'
   ], {
-  base: 'source'
-})
+    base: 'source'
+  })
     .pipe(gulp.dest('build'))
   done();
 }
@@ -109,8 +109,8 @@ export const copy = (done) => {
 // Clean
 
 export const del = () => {
-  return gulp.src('build', {read: false, allowEmpty: true})
-      .pipe(clean());
+  return gulp.src('build', { read: false, allowEmpty: true })
+    .pipe(clean());
 };
 
 // Server
@@ -132,7 +132,7 @@ const server = (done) => {
 const reload = (done) => {
   browser.reload();
   done();
-  }
+}
 
 // Watcher
 
@@ -149,14 +149,14 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
-  );
+);
 
 // Default
 
@@ -165,14 +165,14 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
   gulp.series(
-  server,
-  watcher
+    server,
+    watcher
   ));

@@ -1,4 +1,7 @@
-.map {
+.map__wrapper {
+  background-color: @gray;
+  position: relative;
+
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 350px;
@@ -8,4 +11,12 @@
     width: 1200px;
     height: 350px;
   }
+}
+
+.map__image {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
 }

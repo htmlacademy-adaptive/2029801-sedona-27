@@ -102,6 +102,10 @@
 
   &:not(:last-child) {
     border-bottom: 1px solid @advantages-border;
+
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -223,10 +227,11 @@
   margin-top: 40px;
   display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    height: 256px;
   }
 }
 
