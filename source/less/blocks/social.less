@@ -1,12 +1,17 @@
 .social__list {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  column-gap: 6px;
+  display: grid;
+  gap: 6px;
   padding-left: 0;
+  grid-template-columns: 48px 48px 48px;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 3px;
   }
 }
 
